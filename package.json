@@ -1,0 +1,46 @@
+{
+  "name": "realtime-chat-app",
+  "version": "1.0.0",
+  "description": "A modern real-time chat application built with Vue 3, Node.js, Socket.IO, and MySQL",
+  "scripts": {
+    "install:all": "npm run install:backend && npm run install:frontend",
+    "install:backend": "cd backend && npm install",
+    "install:frontend": "cd frontend && npm install",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build": "npm run build:frontend",
+    "build:frontend": "cd frontend && npm run build",
+    "start": "npm run start:backend",
+    "start:backend": "cd backend && npm start",
+    "setup:env": "cp backend/.env.example backend/.env && cp frontend/.env.example frontend/.env",
+    "test": "npm run test:backend && npm run test:frontend",
+    "test:backend": "cd backend && npm test",
+    "test:frontend": "cd frontend && npm test"
+  },
+  "keywords": [
+    "chat",
+    "realtime",
+    "vue",
+    "nodejs",
+    "socket.io",
+    "mysql"
+  ],
+  "author": "Your Name <your.email@example.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cnyoheadunit/realtime-chat-vue-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cnyoheadunit/realtime-chat-vue-node/issues"
+  },
+  "homepage": "https://github.com/cnyoheadunit/realtime-chat-vue-node#readme"
+}
